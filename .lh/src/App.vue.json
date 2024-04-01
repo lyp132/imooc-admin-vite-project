@@ -3,20 +3,32 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 4,
             "patches": [
                 {
-                    "date": 1693386385746,
+                    "date": 1711873204608,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
                 },
                 {
-                    "date": 1693386613338,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <nav>\n     <router-link to=\"/\">Home</router-link> |\n     <router-link to=\"/about\">About</router-link>\n   </nav>\n-  <router-view/>\n+  <router-view />\n </template>\n \n <style lang=\"scss\">\n #app {\n"
+                    "date": 1711873244797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <script setup>\n-import { RouterLink, RouterView } from 'vue-router'\n-import HelloWorld from './components/HelloWorld.vue'\n+import { RouterLink, RouterView } from 'vue-router';\n+import HelloWorld from './components/HelloWorld.vue';\n </script>\n \n <template>\n   <header>\n@@ -10,9 +10,9 @@\n     <div class=\"wrapper\">\n       <HelloWorld msg=\"You did it!\" />\n \n       <nav>\n-        <RouterLink to=\"/\">Home1 </RouterLink>\n+        <RouterLink to=\"/\">Home12</RouterLink>\n         <RouterLink to=\"/about\">About</RouterLink>\n       </nav>\n     </div>\n   </header>\n"
+                },
+                {
+                    "date": 1711874647754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,11 @@\n     <div class=\"wrapper\">\n       <HelloWorld msg=\"You did it!\" />\n \n       <nav>\n-        <RouterLink to=\"/\">Home12</RouterLink>\n+        <RouterLink to=\"/\">Home1234</RouterLink>\n+\n+        \n         <RouterLink to=\"/about\">About</RouterLink>\n       </nav>\n     </div>\n   </header>\n"
+                },
+                {
+                    "date": 1711874942951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <div class=\"wrapper\">\n       <HelloWorld msg=\"You did it!\" />\n \n       <nav>\n-        <RouterLink to=\"/\">Home1234</RouterLink>\n+        <RouterLink to=\"/\">Home12345</RouterLink>\n \n         <RouterLink to=\"/about\">About</RouterLink>\n       </nav>\n     </div>\n"
+                },
+                {
+                    "date": 1711874951321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <div class=\"wrapper\">\n       <HelloWorld msg=\"You did it!\" />\n \n       <nav>\n-        <RouterLink to=\"/\">Home12345</RouterLink>\n+        <RouterLink to=\"/\">Home123456</RouterLink>\n \n         <RouterLink to=\"/about\">About</RouterLink>\n       </nav>\n     </div>\n"
                 }
             ],
-            "date": 1693386385746,
+            "date": 1711873204608,
             "name": "Commit-0",
-            "content": "<template>\n  <nav>\n    <router-link to=\"/\">Home</router-link> |\n    <router-link to=\"/about\">About</router-link>\n  </nav>\n  <router-view/>\n</template>\n\n<style lang=\"scss\">\n#app {\n  font-family: Avenir, Helvetica, Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  text-align: center;\n  color: #2c3e50;\n}\n\nnav {\n  padding: 30px;\n\n  a {\n    font-weight: bold;\n    color: #2c3e50;\n\n    &.router-link-exact-active {\n      color: #42b983;\n    }\n  }\n}\n</style>\n"
+            "content": "<script setup>\nimport { RouterLink, RouterView } from 'vue-router'\nimport HelloWorld from './components/HelloWorld.vue'\n</script>\n\n<template>\n  <header>\n    <img alt=\"Vue logo\" class=\"logo\" src=\"@/assets/logo.svg\" width=\"125\" height=\"125\" />\n\n    <div class=\"wrapper\">\n      <HelloWorld msg=\"You did it!\" />\n\n      <nav>\n        <RouterLink to=\"/\">Home1 </RouterLink>\n        <RouterLink to=\"/about\">About</RouterLink>\n      </nav>\n    </div>\n  </header>\n\n  <RouterView />\n</template>\n\n<style scoped>\nheader {\n  line-height: 1.5;\n  max-height: 100vh;\n}\n\n.logo {\n  display: block;\n  margin: 0 auto 2rem;\n}\n\nnav {\n  width: 100%;\n  font-size: 12px;\n  text-align: center;\n  margin-top: 2rem;\n}\n\nnav a.router-link-exact-active {\n  color: var(--color-text);\n}\n\nnav a.router-link-exact-active:hover {\n  background-color: transparent;\n}\n\nnav a {\n  display: inline-block;\n  padding: 0 1rem;\n  border-left: 1px solid var(--color-border);\n}\n\nnav a:first-of-type {\n  border: 0;\n}\n\n@media (min-width: 1024px) {\n  header {\n    display: flex;\n    place-items: center;\n    padding-right: calc(var(--section-gap) / 2);\n  }\n\n  .logo {\n    margin: 0 2rem 0 0;\n  }\n\n  header .wrapper {\n    display: flex;\n    place-items: flex-start;\n    flex-wrap: wrap;\n  }\n\n  nav {\n    text-align: left;\n    margin-left: -1rem;\n    font-size: 1rem;\n\n    padding: 1rem 0;\n    margin-top: 1rem;\n  }\n}\n</style>\n"
         }
     ]
 }
